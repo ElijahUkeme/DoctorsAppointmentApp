@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_26"
+    tools:context=".activities.TokenActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@color/cyan_800_overlay"
+        android:layout_height="match_parent"/>
+
+    <EditText
+        android:id="@+id/input_token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Enter The Token"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/input_design"
+        android:padding="4dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:text="Next"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:layout_marginRight="15dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>
